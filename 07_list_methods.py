@@ -1,0 +1,31 @@
+# list is sequence datatype
+# lst1 = [1, "harry", True, 3 + 4j, None, {123, 213}]
+# # we can modify lists unlike strings
+# print(lst1)
+# lst1.remove("harry")
+# print(lst1)
+# lst1.append("hek")
+# print(lst1)
+# lst1.pop()
+# print(lst1)
+# lst1.extend([2, 3, 4, 5])
+# print(lst1)
+# print(lst1.index(3 + 4j))
+# print(lst1[0:5])
+# print(lst1[-1])
+# lst1.pop()
+# print(lst1)
+# print(lst1.count(2))
+l1 = [1,2,3,6,7,2,41,575,757]
+l1.sort()
+print(l1)
+l1.pop()
+l1.remove(2)
+print(l1.count(1))
+print(l1.append(4))
+print(l1.extend([2,3,4,5]))
+print(l1)
+# l1.clear()
+
+print(l1[0:4])
+print(l1[2:6])
