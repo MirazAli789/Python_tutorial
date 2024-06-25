@@ -14,12 +14,17 @@ while True:
     url = f"https://api.weatherapi.com/v1/current.json?key=c86c83165cac49bdab1135835242206&q={city}"
     r = requests.get(url)
     dic = json.loads(r.text)
-    print("Searching ...")
+    
+    print("Loading ...")
     time.sleep(1)
-    print("Current temparature:", dic["current"]["temp_c"], "°C")
-    print("Feels like:", dic["current"]["feelslike_c"], "°C")
+    print("Current temparature: ", dic["current"]["temp_c"], "°C",sep="")
+    time.sleep(0.1)
+    print("Feels like: ", dic["current"]["feelslike_c"], "°C",sep="")
+    time.sleep(0.1)
     print(dic["current"]["condition"]["text"])
-    print("Current wind speed:", dic["current"]["wind_mph"], "kmph")
-    print("Humidity:", dic["current"]["humidity"], "%")
-
+    time.sleep(0.1)
+    print("Current wind speed: ", dic["current"]["wind_mph"], "kmph",sep="")
+    time.sleep(0.1)
+    print("Humidity: ", dic["current"]["humidity"], "%",sep="")
+    time.sleep(0.1)
 # print(r.text)
